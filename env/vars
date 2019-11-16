@@ -1,1 +1,8 @@
+export SOFTWARE_HOME=$HOME/software/bin
+export PATH=$SOFTWARE_HOME:$PATH
 
+export GOBIN=$HOME/go/bin
+export PATH=$GOBIN:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$PYENV_ROOT/bin:$PATH
