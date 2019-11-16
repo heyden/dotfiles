@@ -3,13 +3,20 @@ alias sshgh='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_id_rsa'
 
 # Git
 alias gits='git status -sb'
-alias gpu='git pull'
+alias gpl='git pull'
+alias gplm='git pull origin master'
 alias gp='git push'
+alias gpum='git push origin master'
 
 # Node
-
 
 # Go
 alias go-build='go build -a ./...'
 alias go-buildrace='go build -a -race ./...'
 alias go-install='go install -a ./...'
+
+# Rust
+
+# Java
+
+# Kotlin

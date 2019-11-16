@@ -1,5 +1,5 @@
-export SOFTWARE_HOME=$HOME/software/bin
-export PATH=$SOFTWARE_HOME:$PATH
+export SOFTWARE_HOME=$HOME/software
+export PATH=$SOFTWARE_HOME/bin:$PATH
 
 export GOBIN=$HOME/go/bin
 export PATH=$GOBIN:$PATH
