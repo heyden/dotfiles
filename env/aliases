@@ -1,12 +1,16 @@
 # System
-alias sshgh='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_id_rsa'
+alias sshgh='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_github'
+
+# k8s
 
 # Git
-alias gits='git status -sb'
+alias git-s='git status -sb'
 alias gpl='git pull'
+alias gplo='git pull origin'
 alias gplm='git pull origin master'
 alias gp='git push'
 alias gpum='git push origin master'
+alias gpuo='git push -u origin'
 
 # Node
 
@@ -19,4 +23,8 @@ alias go-install='go install -a ./...'
 
 # Java
 
+
 # Kotlin
+
+# Gradle
+alias gwr='gradlew'

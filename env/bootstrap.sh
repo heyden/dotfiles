@@ -13,3 +13,6 @@ fi
 if [ -f "$HOME/dotfiles/env/secrets" ]; then
     source "$HOME/dotfiles/env/secrets"
 fi
+
+# fzf config
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

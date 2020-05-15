@@ -1,0 +1,48 @@
+set encoding=utf-8
+scriptencoding utf-8
+
+" CVE-2019-12735
+set nomodeline
+
+
+""" General
+set nocompatible
+" reload files when they change on disk
+set autoread
+"do not create swap files
+set noswapfile
+
+set esckeys
+set notimeout ttimeout ttimeoutlen=0
+set showcmd
+
+
+""" Display
+" line numbers
+set number
+" 100 char limit
+set colorcolumn=101
+" highlight active line
+:highlight LineNr ctermfg=grey
+set cursorline
+
+""" Theme
+set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
+
+
+""" Syntax
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+
+
+""" Search
+" incremental search
+set incsearch
+" highlight matched search words
+set hlsearch
+" ignore case unless capitalized letters
+set ignorecase smartcase
