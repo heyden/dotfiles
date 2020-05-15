@@ -37,6 +37,12 @@ syntax on
 filetype on
 filetype indent on
 filetype plugin on
+set nosmartindent
+set nojoinspaces
+
+set sw=4 et
+set softtabstop=-1
+set ts=8
 
 
 """ Search
