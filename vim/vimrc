@@ -52,3 +52,14 @@ set incsearch
 set hlsearch
 " ignore case unless capitalized letters
 set ignorecase smartcase
+
+""" Ale Settings
+let g:ale_echo_cursor = v:false
+let g:ale_lint_delay = 0
+let g:ale_linters_explicit = v:true
+let g:ale_set_signs = v:false
+
+
+""" Keybinds
+" fzf keybinding
+noremap <c-p> :FZF<cr>
