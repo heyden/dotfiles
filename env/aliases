@@ -4,21 +4,33 @@ alias sshgh='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_github'
 # k8s
 
 # Git
+alias gc='git clone'
+alias gco='git checkout'
 alias git-s='git status -sb'
+alias git-all='git add -A'
+alias gcm='git commit -am'
 alias gpl='git pull'
 alias gplo='git pull origin'
 alias gplm='git pull origin master'
 alias gp='git push'
 alias gpum='git push origin master'
 alias gpuo='git push -u origin'
-
-# Node
+alias gfu='git fetch upstream'
+alias gru='git fetch upstream && git rebase upstream/master'
+alias gmu='git fetch upstream && git merge upstream/master'
 
 
 # Go
 alias go-build='go build -a ./...'
 alias go-buildrace='go build -a -race ./...'
 alias go-install='go install -a ./...'
+
+
+# Node / NPM
+
+
+# Python
+alias venvme='source venv/bin/activate'
 
 # Rust
 
@@ -30,4 +42,5 @@ alias go-install='go install -a ./...'
 
 
 # Gradle
-alias gwr='gradlew'
+alias gwr='./gradlew'
+alias gwrt='./gradlew tasks'
