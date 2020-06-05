@@ -8,6 +8,8 @@ if [ ! -d "$HOME/.nvm" ] && ./$HOME/dotfiles/scripts/install/get_nvm.sh
 # install pyenv if not installed
 if [ ! -d "$HOME/.pyenv" ] && ./$HOME/dotfiles/scripts/install/get_pyenv.sh
 
+./$HOME/dotfiles/scripts/install/get_jq.sh
+
 tooling=(
     vim
     zsh

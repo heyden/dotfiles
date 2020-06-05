@@ -1,6 +1,9 @@
+#!/usr/bin/env bash
 VERSION=$1
 
 myhost="$(uname -s)"
+
+machine="windows"
 
 case "$myhost" in
     Linux*)     machine="linux";;
@@ -10,6 +13,7 @@ esac
 case "$machine" in 
     linux*)     ARTIFACT="go$VERSION.linux-amd64.tar.gz";;
     mac*)       ARTIFACT="go$VERSION.darwin-amd64.tar.gz";;
+    windows*)   ARTIFACT="go$VERSION.windows-amd64.zip";;
 esac
 
 DL_URL="https://dl.google.com/go/$ARTIFACT"
