@@ -1,9 +1,17 @@
 export SOFTWARE_HOME=$HOME/software
 export PATH=$SOFTWARE_HOME/bin:$PATH
 
-export GOPATH=$HOME/workspace/go
-export GOROOT=$HOME/go
-export PATH=$GOROOT/bin:$PATH
-
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH=$PYENV_ROOT/bin:$PATH
+
+machine='nix'
+
+case "$OSTYPE" in
+    msys*)     machine="windows";;
+esac
+
+if [ "$machine" != "windows" ]; then
+    export GOROOT=$HOME/go
+    export GOPATH=$HOME/workspace/go
+    export PATH=$GOROOT/bin:$PATH
+fi
