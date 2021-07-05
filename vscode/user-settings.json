@@ -1,4 +1,5 @@
 {
+    "telemetry.enableTelemetry": false,
     "window.zoomLevel": -1,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
@@ -10,15 +11,20 @@
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": true,
-            "source.organizeImports": true
+            "source.organizeImports": true,
         }
     },
+    "rust.all_features": true,
+    "rust.clippy_preference": "on",
     "[go]": {
         "editor.insertSpaces": false,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         }
+    },
+    "gopls": {
+        "build.experimentalWorkspaceModule": true
     },
     "go.formatTool": "goimports",
     "go.toolsManagement.autoUpdate": true,
