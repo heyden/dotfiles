@@ -28,6 +28,17 @@
     },
     "go.formatTool": "goimports",
     "go.toolsManagement.autoUpdate": true,
+    "[prisma]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[typescript]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -52,8 +63,11 @@
     "python.languageServer": "Pylance",
     "[java]": {
         "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
     },
-    "java.saveActions.organizeImports": true,
     "java.codeGeneration.generateComments": true,
     "java.configuration.checkProjectSettingsExclusions": false,
     "codeQL.telemetry.enableTelemetry": false
