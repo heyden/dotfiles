@@ -1,12 +1,21 @@
 {
+    "editor.bracketPairColorization.enabled": true,
+
+    "telemetry.telemetryLevel": "off",
     "telemetry.enableTelemetry": false,
+    "codeQL.telemetry.enableTelemetry": false,
+
     "window.zoomLevel": -1,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
     "workbench.startupEditor": "none",
+    "workbench.editorAssociations": {
+        "*.lock": "default"
+    },
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "breadcrumbs.enabled": true,
+
     "[rust]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -16,6 +25,7 @@
     },
     "rust.all_features": true,
     "rust.clippy_preference": "on",
+
     "[go]": {
         "editor.insertSpaces": false,
         "editor.formatOnSave": true,
@@ -28,9 +38,11 @@
     },
     "go.formatTool": "goimports",
     "go.toolsManagement.autoUpdate": true,
+
     "[prisma]": {
         "editor.formatOnSave": true
     },
+
     "[javascript]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -60,7 +72,9 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
+
     "python.languageServer": "Pylance",
+
     "[java]": {
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.formatOnSave": true,
@@ -70,5 +84,5 @@
     },
     "java.codeGeneration.generateComments": true,
     "java.configuration.checkProjectSettingsExclusions": false,
-    "codeQL.telemetry.enableTelemetry": false
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\kris\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\""
 }
