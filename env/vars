@@ -1,6 +1,8 @@
 export SOFTWARE_HOME=$HOME/software
 export PATH=$SOFTWARE_HOME/bin:$PATH
 
+export GOROOT=c:/go
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH=$PYENV_ROOT/bin:$PATH
 
