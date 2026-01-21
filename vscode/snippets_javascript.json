@@ -1,0 +1,18 @@
+{
+    "JavaScript function": {
+        "prefix": ["jsfn"],
+        "body": [
+            "function $0",
+            "\t$1",
+            "}"
+        ]
+    },
+    "JavaScript async function": {
+        "prefix": ["jsafn"],
+        "body": [
+            "async function $0() {",
+            "\t$1",
+            "}"
+        ]
+    }
+}

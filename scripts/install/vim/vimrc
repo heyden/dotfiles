@@ -1,0 +1,65 @@
+set encoding=utf-8
+scriptencoding utf-8
+
+" CVE-2019-12735
+set nomodeline
+
+
+""" General
+set nocompatible
+" reload files when they change on disk
+set autoread
+"do not create swap files
+set noswapfile
+
+set esckeys
+set notimeout ttimeout ttimeoutlen=0
+set showcmd
+
+
+""" Display
+" line numbers
+set number
+" 100 char limit
+set colorcolumn=101
+" highlight active line
+:highlight LineNr ctermfg=grey
+set cursorline
+
+""" Theme
+set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
+
+
+""" Syntax
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+set nosmartindent
+set nojoinspaces
+
+set sw=4 et
+set softtabstop=-1
+set ts=8
+
+
+""" Search
+" incremental search
+set incsearch
+" highlight matched search words
+set hlsearch
+" ignore case unless capitalized letters
+set ignorecase smartcase
+
+""" Ale Settings
+let g:ale_echo_cursor = v:false
+let g:ale_lint_delay = 0
+let g:ale_linters_explicit = v:true
+let g:ale_set_signs = v:false
+
+
+""" Keybinds
+" fzf keybinding
+noremap <c-p> :FZF<cr>

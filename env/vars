@@ -1,0 +1,23 @@
+export SOFTWARE_HOME=$HOME/software
+export PATH=$SOFTWARE_HOME/bin:$PATH
+
+export GOROOT=c:/go
+
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$PYENV_ROOT/bin:$PATH
+export PYTHONPATH=$HOME/software/python/python-3.13.6/Lib
+export PATH=$HOME/.local/bin:$PATH    # pipx install location
+
+
+machine='nix'
+
+case "$OSTYPE" in
+    msys*)     machine="windows";;
+esac
+
+if [ "$machine" != "windows" ]; then
+    export GOROOT=$HOME/go
+    export GOPATH=$HOME/workspace/go
+    export PATH=$GOROOT/bin:$PATH
+fi
