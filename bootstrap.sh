@@ -1,6 +1,6 @@
 machine="windows"
 
-case "$myhost" in
+case "$(uname)" in
     Linux*)     machine="linux";;
     Darwin*)    machine="mac";;
 esac
@@ -28,6 +28,10 @@ elif [ "$machine" == "mac" ] && [ -f $HOME/dotfiles/env/mac/env ]; then
 elif [ "$machine" == "windows" ] && [ -f $HOME/dotfiles/env/windows/env ]; then
     source $HOME/dotfiles/env/windows/env
 fi
+
+# check if we are in silverblue
+# /etc/os-release contains VARIANT="Silverlue"
+[ "$(grep 'VARIANT="Silverblue"' /etc/os-release)" != "" ] && source $HOME/dotfiles/env/silverblue/env
 
 # source common secrets
 if [ -f $HOME/dotfiles/env/secrets ]; then

@@ -5,3 +5,5 @@ function is_toolbox() {
         echo "[${HOSTNAME} ${TOOLBOX_NAME}]"
     fi
 }
+
+export IS_SILVERBLUE=1

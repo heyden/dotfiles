@@ -9,6 +9,9 @@ export PATH=$PYENV_ROOT/bin:$PATH
 export PYTHONPATH=$HOME/software/python/python-3.13.6/Lib
 export PATH=$HOME/.local/bin:$PATH
 
+# java
+export JAVA_HOME=$HOME/software/jdk-25.0.2
+export PATH=$JAVA_HOME/bin:$PATH
 
 machine='nix'
 
