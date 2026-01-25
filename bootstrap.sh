@@ -5,27 +5,31 @@ case "$myhost" in
     Darwin*)    machine="mac";;
 esac
 
-
+# source common vars
 if [ -f $HOME/dotfiles/env/vars ]; then
     source $HOME/dotfiles/env/vars
 fi
 
+# source common aliases
 if [ -f $HOME/dotfiles/env/aliases ]; then
     source $HOME/dotfiles/env/aliases
 fi
 
-if [ "$machine" = "linux" ] && [ -f $HOME/dotfiles/env/aliases_linux ]; then
-    source $HOME/dotfiles/env/aliases_linux
-elif [ "$machine" = "mac" ] && [ -f $HOME/dotfiles/env/aliases_mac ]; then
-    source $HOME/dotfiles/env/aliases_mac
-elif [ "$machine" = "windows" ] && [ -f $HOME/dotfiles/env/aliases_windows ]; then
-    source $HOME/dotfiles/env/aliases_windows
-fi  
-
+# source common functions
 if [ -f $HOME/dotfiles/env/functions ]; then
     source $HOME/dotfiles/env/functions
 fi
 
+# source machine specific env
+if [ "$machine" == "linux" ] && [ -f $HOME/dotfiles/env/linux/env ]; then
+    source $HOME/dotfiles/env/linux/env
+elif [ "$machine" == "mac" ] && [ -f $HOME/dotfiles/env/mac/env ]; then
+    source $HOME/dotfiles/env/mac/env
+elif [ "$machine" == "windows" ] && [ -f $HOME/dotfiles/env/windows/env ]; then
+    source $HOME/dotfiles/env/windows/env
+fi
+
+# source common secrets
 if [ -f $HOME/dotfiles/env/secrets ]; then
     source $HOME/dotfiles/env/secrets
 fi

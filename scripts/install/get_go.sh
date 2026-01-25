@@ -20,15 +20,33 @@ DL_URL="https://dl.google.com/go/$ARTIFACT"
 
 echo "Downloading Go $VERSION for $machine from $DL_URL"
 
-home_dir=$HOME
+install_dir="$HOME/go"
 
 if [ "$machine" = "windows" ]; then
-    home_dir="/c/go"
+    install_dir="/c/go"
+fi
+
+if [ ! -d "$install_dir" ]; then
+    echo "Creating install directory at $install_dir"
+    mkdir -p $install_dir
 fi
 
 mkdir -p $HOME/dotfiles/temp
 curl -o $HOME/dotfiles/temp/$ARTIFACT $DL_URL
 
-tar -xvf $HOME/dotfiles/temp/$ARTIFACT
-mv $HOME/dotfiles/temp/go/. $HOME/go/.
-rm -f $HOME/dotfiles/temp
+
+echo "extracting $ARTIFACT"
+if [ "$machine" = "windows" ]; then
+    echo "extracting zip for windows"
+    unzip -q $HOME/dotfiles/temp/$ARTIFACT -d $HOME/dotfiles/temp/
+else
+    tar -xzf $HOME/dotfiles/temp/$ARTIFACT -C $HOME/dotfiles/temp/
+    echo "extracting for $machine is not yet implemented"
+fi
+
+echo "installing to $install_dir/go"
+rm -rf $install_dir/go
+mv $HOME/dotfiles/temp/go/* $install_dir
+rm -rf $HOME/dotfiles/temp
+
+go version

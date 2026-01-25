@@ -20,5 +20,7 @@ for tool in "${tooling[@]}"; do\
     ./scripts/install/install_$tool.sh
 done
 
+cp ./$HOME/dotfiles/configs/starship.toml $HOME/.config/starship.toml
+
 # add bootstrap script to ~/.zshrc
 echo '[ -f "~/dotfiles/bootstrap.sh" ] && \. ~/dotfiles/boostrap.sh' >> ~/.bash_profile

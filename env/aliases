@@ -1,13 +1,3 @@
-# System
-alias sshme='eval $(ssh-agent -s) && ssh-add'
-alias sshgh='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_github'
-alias workspace='cd e:/workspaces'
-alias wprojects='cd e:/workspaces/projects'
-alias wsandbox='cd e:/workspaces/sandbox'
-alias wgamedev='cd e:/workspaces/gamedev'
-
-# k8s
-
 # Git
 alias git-s='git status -sb'
 alias gitdiff='git diff --staged'

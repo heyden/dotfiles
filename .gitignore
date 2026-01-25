@@ -3,6 +3,6 @@ temp
 
 vim/colors/solarized.vim
 
-aliases_windows
-aliases_mac
-aliases_linux
+env/windows/aliases
+env/mac/aliases
+env/linux/aliases
