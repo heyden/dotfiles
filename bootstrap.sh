@@ -31,7 +31,7 @@ fi
 
 # check if we are in silverblue
 # /etc/os-release contains VARIANT="Silverlue"
-[ "$(grep 'VARIANT="Silverblue"' /etc/os-release)" != "" ] && source $HOME/dotfiles/env/silverblue/env
+[ -f /etc/os-release ] && [ "$(grep 'VARIANT="Silverblue"' /etc/os-release)" != "" ] && source $HOME/dotfiles/env/silverblue/env
 
 # source common secrets
 if [ -f $HOME/dotfiles/env/secrets ]; then
