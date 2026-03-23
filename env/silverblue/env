@@ -1,4 +1,4 @@
-function is_toolbox() {
+function is_toolbox() {     
     if [ -f "/run/.toolboxenv" ]
     then
         TOOLBOX_NAME=$(cat /run/.containerenv | grep -oP "(?<=name=\")[^\";]+")
@@ -7,3 +7,7 @@ function is_toolbox() {
 }
 
 export IS_SILVERBLUE=1
+
+# node
+export NODE_HOME="$HOME/software/nodejs/node-v24.14.0-linux-x64"
+export PATH=$NODE_HOME/bin:$PATH
