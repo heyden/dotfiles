@@ -11,3 +11,7 @@ export IS_SILVERBLUE=1
 # node
 export NODE_HOME="$HOME/software/nodejs/node-v24.14.0-linux-x64"
 export PATH=$NODE_HOME/bin:$PATH
+
+# flutter
+export FLUTTER_HOME="$HOME/software/flutter"
+export PATH=$FLUTTER_HOME/bin:$PATH
