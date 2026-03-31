@@ -15,3 +15,7 @@ export PATH=$NODE_HOME/bin:$PATH
 # flutter
 export FLUTTER_HOME="$HOME/software/flutter"
 export PATH=$FLUTTER_HOME/bin:$PATH
+
+
+alias disabletrackpad="gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled"
+alias enabletrackpad="gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled"
