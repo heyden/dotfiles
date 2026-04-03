@@ -16,6 +16,10 @@ export PATH=$NODE_HOME/bin:$PATH
 export FLUTTER_HOME="$HOME/software/flutter"
 export PATH=$FLUTTER_HOME/bin:$PATH
 
+# apm
+export APM_HOME="$HOME/software/apm-linux-x86_64"
+export PATH=$APM_HOME:$PATH
+
 
 alias disabletrackpad="gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled"
 alias enabletrackpad="gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled"
