@@ -7,11 +7,8 @@ export GOROOT=c:/go
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH=$PYENV_ROOT/bin:$PATH
 export PYTHONPATH=$HOME/software/python/python-3.13.6/Lib
-export PATH=$HOME/.local/bin:$PATH
 
 # rust
-export CARGO_HOME="~/.cargo/bin"
-export PATH=$CARGO_HOME:$PATH
 
 # java
 export JAVA_HOME=$HOME/software/java/jdk-25.0.2

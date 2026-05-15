@@ -19,36 +19,33 @@
     "telemetry.telemetryLevel": "off",
     "codeQL.telemetry.enableTelemetry": false,
     "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.editorAssociations": {
         "*.lock": "default"
     },
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "breadcrumbs.enabled": true,
-
     "[rust]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.organizeImports": true,
+            "source.fixAll": "always",
+            "source.organizeImports": "always"
         }
     },
-
     "[go]": {
         "editor.insertSpaces": false,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "always"
         }
     },
     "gopls": {
-        "build.experimentalWorkspaceModule": true
+        "ui.completion.usePlaceholders": true,
+        "ui.diagnostic.staticcheck": true,
+        "ui.semanticTokens": true,
     },
     "go.formatTool": "goimports",
     "go.toolsManagement.autoUpdate": true,
-
     "[prisma]": {
         "editor.formatOnSave": true
     },
@@ -56,20 +53,20 @@
     "[javascript]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-            "source.organizeImports": true
+            "source.fixAll.eslint": "always",
+            "source.organizeImports": "always"
         },
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-            "source.organizeImports": true
+            "source.fixAll.eslint": "always",
+            "source.organizeImports": "always"
         },
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "typescript.updateImportsOnFileMove.enabled": "never",
+    "js/ts.updateImportsOnFileMove.enabled": "never",
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -80,23 +77,24 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "currentDocument"
     },
-
     "python.languageServer": "Pylance",
-
     "[java]": {
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
+            "source.organizeImports": "always",
         }
     },
     "java.codeGeneration.generateComments": true,
-    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.import.generatesMetadataFilesAtProjectRoot": true,
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\kris\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.zoomLevel": -1
+    "window.zoomLevel": 0,
+    "workbench.browser.pageZoom": "100%",
+    "editor.fontSize": 14,
+    "explorer.confirmDelete": false,
 }
