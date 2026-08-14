@@ -1,3 +1,20 @@
 mkcd() {
     mkdir -p $1 && cd $1
 }
+
+mvenv() {
+    python -m venv venv
+}
+
+avenv() {
+    if [ "$machine" == "windows" ]; then
+        source venv/Scripts/activate
+    else
+        source venv/bin/activate
+    fi
+}
+
+sshme() {
+    eval "$(ssh-agent -s)"
+    ssh-add $1
+}

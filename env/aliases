@@ -1,5 +1,10 @@
 alias dotfiles="cd $HOME/dotfiles"
 
+# Kubernetes
+alias tctl='talosctl'
+alias ktcl='kubectl'
+
+
 # Git
 alias git-s='git status -sb'
 alias gitdiff='git diff --staged'

@@ -1,5 +1,6 @@
-export GOROOT=c:/go
-
-if [ "$machine" == "windows" ] && [ -f $HOME/dotfiles/env/windows/aliases ]; then
+if [ -f $HOME/dotfiles/env/windows/aliases ]; then
     source $HOME/dotfiles/env/windows/aliases
 fi
+
+# go
+export GOROOT=c:/go

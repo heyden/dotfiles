@@ -1,0 +1,13 @@
+# go
+export GOROOT=$HOME/go
+export GOPATH=$HOME/workspace/go
+export PATH=$GOROOT/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
+
+# flutter
+export FLUTTER_HOME="$HOME/software/flutter"
+export PATH=$FLUTTER_HOME/bin:$PATH
+
+# apm
+export APM_HOME="$HOME/software/apm-linux-x86_64"
+export PATH=$APM_HOME:$PATH

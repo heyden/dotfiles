@@ -97,4 +97,8 @@
     "workbench.browser.pageZoom": "100%",
     "editor.fontSize": 14,
     "explorer.confirmDelete": false,
+    "github.copilot.nextEditSuggestions.extendedRange": true,
+    "chat.unifiedAgentsBar.enabled": true,
+    "claudeCode.preferredLocation": "panel",
+    "chat.viewSessions.orientation": "stacked",
 }

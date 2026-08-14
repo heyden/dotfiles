@@ -44,4 +44,4 @@ fi
 # starship
 eval "$(starship init bash)"
 
-export BOOTSTRPED=1
+export BOOTSTRAPPED=1

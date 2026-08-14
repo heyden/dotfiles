@@ -18,7 +18,7 @@ case "$machine" in
     windows*)   ARTIFACT="jq-$VERSION/jq-win64.exe";;
 esac
 
-BIN_DIR="/usr/local/bin"
+BIN_DIR="$HOME/.local/bin"
 
 if [ "$machine" = "windows" ]; then
     BIN_DIR="$HOME/.local/bin"
