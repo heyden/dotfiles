@@ -7,25 +7,31 @@ esac
 
 # source common vars
 if [ -f $HOME/dotfiles/env/vars ]; then
+    echo "sourcing common vars"
     source $HOME/dotfiles/env/vars
 fi
 
 # source common aliases
 if [ -f $HOME/dotfiles/env/aliases ]; then
+    echo "sourcing common aliases"
     source $HOME/dotfiles/env/aliases
 fi
 
 # source common functions
 if [ -f $HOME/dotfiles/env/functions ]; then
+    echo "sourcing common functions"
     source $HOME/dotfiles/env/functions
 fi
 
 # source machine specific env
 if [ "$machine" == "linux" ] && [ -f $HOME/dotfiles/env/linux/env ]; then
+    echo "sourcing linux env"
     source $HOME/dotfiles/env/linux/env
 elif [ "$machine" == "mac" ] && [ -f $HOME/dotfiles/env/mac/env ]; then
+    echo "sourcing mac env"
     source $HOME/dotfiles/env/mac/env
 elif [ "$machine" == "windows" ] && [ -f $HOME/dotfiles/env/windows/env ]; then
+    echo "sourcing windows env"
     source $HOME/dotfiles/env/windows/env
 fi
 
@@ -35,6 +41,7 @@ fi
 
 # source common secrets
 if [ -f $HOME/dotfiles/env/secrets ]; then
+    echo "sourcing common secrets"
     source $HOME/dotfiles/env/secrets
 fi
 

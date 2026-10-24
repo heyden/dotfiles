@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-chmod 755 $HOME/dotfiles/scripts/*.sh
+chmod 755 $HOME/dotfiles/scripts/install/*.sh
 
 # install nvm if not installed
 #if [ ! -d "$HOME/.nvm" ] && ./$HOME/dotfiles/scripts/install/get_nvm.sh
@@ -20,7 +20,7 @@ for tool in "${tooling[@]}"; do\
     ./scripts/install/install_$tool.sh
 done
 
-cp ./$HOME/dotfiles/configs/starship.toml $HOME/.config/starship.toml
+cp $HOME/dotfiles/configs/starship.toml $HOME/.config/starship.toml
 
 # add bootstrap script to ~/.zshrc
 echo '[ -f "~/dotfiles/bootstrap.sh" ] && \. ~/dotfiles/boostrap.sh' >> ~/.bash_profile
